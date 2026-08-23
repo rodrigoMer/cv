@@ -327,6 +327,17 @@ h3 {
   line-height: 1.55;
 }
 
+.technology-line {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 0.68rem;
+  line-height: 1.5;
+}
+
+.technology-line strong {
+  color: var(--navy);
+}
+
 .education-item {
   padding-bottom: 7px;
 }
@@ -554,4 +565,3 @@ footer button:focus-visible {
     display: none;
   }
 }
-
