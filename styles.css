@@ -338,6 +338,26 @@ h3 {
   color: var(--navy);
 }
 
+.experience-project {
+  margin-top: 17px;
+  padding: 14px 15px 15px;
+  background: #f4f9fe;
+  border-left: 3px solid var(--blue);
+  border-radius: 0 3px 3px 0;
+}
+
+.experience-project h4 {
+  margin: 0 0 9px;
+  color: var(--navy);
+  font-size: 0.75rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.experience-project ul {
+  margin: 0;
+}
+
 .education-item {
   padding-bottom: 7px;
 }
