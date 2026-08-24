@@ -369,6 +369,12 @@ h3 {
   padding-bottom: 7px;
 }
 
+.education-item + .education-item {
+  margin-top: 10px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
 .interest-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -451,7 +457,7 @@ h3 {
   border-radius: 50%;
 }
 
-.level-three i:nth-last-child(-n + 2) {
+.level-four i:last-child {
   background: white;
 }
 
