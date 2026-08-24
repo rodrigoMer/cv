@@ -394,32 +394,38 @@ h3 {
 
 .skill-groups {
   display: grid;
-  gap: 12px;
+  gap: 16px;
 }
 
 .skill-group {
-  padding-bottom: 11px;
-  border-bottom: 1px solid var(--line);
   break-inside: avoid;
 }
 
-.skill-group:last-child {
-  padding-bottom: 0;
-  border-bottom: 0;
-}
-
 .skill-group h3 {
-  margin-bottom: 4px;
+  margin-bottom: 7px;
   color: var(--navy);
   font-size: 0.72rem;
-  font-weight: 700;
+  font-weight: 800;
 }
 
-.skill-group p {
-  margin-bottom: 0;
-  color: #465163;
-  font-size: 0.66rem;
-  line-height: 1.55;
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  padding: 5px 8px;
+  color: var(--navy);
+  background: #eef7fe;
+  border: 1px solid #cce9fb;
+  border-radius: 999px;
+  font-size: 0.64rem;
+  font-weight: 700;
+  line-height: 1.3;
 }
 
 .achievement-list {
