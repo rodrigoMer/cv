@@ -70,12 +70,15 @@
                 implementado capas BFF, interceptores HTTP centralizados, autenticación y manejo
                 de sesión, protección CSRF, configuración por ambientes y enrutamiento mediante
                 reverse proxy con Nginx. Estas plataformas se han desplegado con CI/CD sobre
-                Azure, AWS, Google Cloud, Cloudflare y Vercel. En experiencias de video social
-                implementé en AWS un flujo asíncrono que desacopla carga, procesamiento y
-                distribución HLS, integrándolo en Flutter con reproducción condicionada por la
-                visibilidad del viewport, precarga controlada, un único reproductor activo,
-                liberación de memoria, manejo de errores y transiciones fluidas durante el
-                scrolling. También he integrado Firebase/FCM, Stripe, StoreKit y Google Play
+                Azure, AWS, Google Cloud, Cloudflare y Vercel. Para experiencias de video social
+                implementé en AWS un flujo asíncrono de streaming que desacopla la carga, la
+                transcodificación y la distribución mediante HLS con bitrate adaptativo. En
+                Flutter desarrollé un pool acotado de videos y controladores gobernado por un
+                algoritmo de ventana deslizante: mantiene preparados el elemento visible y sus
+                adyacentes mediante prefetching y lazy loading, activa un único reproductor según
+                la visibilidad del viewport, controla el buffering y libera memoria con una
+                estrategia de expulsión tipo LRU conforme avanza el scrolling. También he
+                integrado Firebase/FCM, Stripe, StoreKit y Google Play
                 Billing, además del ciclo completo de publicación en App Store y Google Play.
               </p>
 
