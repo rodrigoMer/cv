@@ -124,12 +124,16 @@
                     suscripciones, gamificación, analítica y flujos administrativos.
                   </li>
                   <li>
-                    Diseñé un pipeline asíncrono de procesamiento de video en AWS con colas y
-                    streaming HLS. Optimicé la reproducción móvil y el uso de recursos del
-                    dispositivo manteniendo un único reproductor activo, evitando
-                    inicializaciones innecesarias y gestionando transiciones fluidas entre
-                    videos durante el scrolling, con precarga, detección de visibilidad y
-                    manejo del ciclo de vida de la aplicación.
+                    Implementé un pipeline asíncrono de procesamiento y streaming de video en
+                    AWS, desacoplando la carga, transcodificación y generación de rendiciones
+                    mediante un flujo bufferizado con colas, y distribuyendo el contenido por
+                    HLS con bitrate adaptativo. En Flutter desarrollé un pool acotado de videos
+                    y controladores basado en una ventana deslizante que mantiene preparado el
+                    video visible y sus elementos adyacentes mediante prefetching y lazy
+                    loading. La reproducción responde a la visibilidad del viewport, conserva
+                    un único reproductor activo, controla el buffering y libera controladores,
+                    memoria y caché con una estrategia tipo LRU durante el scrolling, incluyendo
+                    estados de carga y error, transiciones y ciclo de vida de la aplicación.
                   </li>
                   <li>
                     Trabajé con Azure Container Apps, API Management, Azure SQL, Redis,
