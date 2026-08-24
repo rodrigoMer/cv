@@ -162,20 +162,17 @@
                       patrones estandarizados y una arquitectura modular por funcionalidades.
                     </li>
                     <li>
-                      Implementé una capa segura de integración con APIs y el BFF de GAGE,
-                      incluyendo interceptores HTTP, manejo centralizado de solicitudes y
-                      respuestas, autenticación, protección CSRF, errores y configuración
-                      por ambiente.
+                      Construí la capa de comunicación entre React y el BFF de GAGE mediante
+                      un cliente HTTP centralizado, evitando el acceso directo del frontend a
+                      los servicios internos. Configuré interceptores para adjuntar credenciales
+                      de sesión y tokens CSRF, normalizar solicitudes y respuestas, y transformar
+                      fallos HTTP en errores tipados de aplicación; además, centralicé endpoints,
+                      encabezados y el comportamiento de autenticación por ambiente.
                     </li>
                     <li>
                       Construí fundamentos reutilizables para analítica, gestión de empleados
                       y espacios de trabajo, métricas de RR. HH., engagement y KPIs operativos,
                       acelerando nuevos módulos sin sacrificar consistencia técnica.
-                    </li>
-                    <li>
-                      Integré el frontend con ASP.NET Core, Entity Framework Core, SQL Server,
-                      Cosmos DB, Azure API Management y servicios cloud, apoyando despliegues y
-                      lanzamientos mediante Vercel y GitHub Actions.
                     </li>
                   </ul>
                 </div>
