@@ -260,11 +260,7 @@ h1 span {
 
 .experience-overview {
   margin-bottom: 28px;
-  padding: 15px 17px;
-  color: #354256;
-  background: #f5faff;
-  border-left: 3px solid var(--blue);
-  border-radius: 0 4px 4px 0;
+  color: #465163;
   font-size: 0.72rem;
   line-height: 1.65;
 }
