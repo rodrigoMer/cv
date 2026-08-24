@@ -102,6 +102,18 @@
                     para iOS y Android.
                   </li>
                   <li>
+                    Implementé un pipeline asíncrono de procesamiento y streaming de video en
+                    AWS, desacoplando la carga, transcodificación y generación de rendiciones
+                    mediante un flujo bufferizado con colas, y distribuyendo el contenido por
+                    HLS con bitrate adaptativo. En Flutter desarrollé un pool acotado de videos
+                    y controladores basado en una ventana deslizante que mantiene preparado el
+                    video visible y sus elementos adyacentes mediante prefetching y lazy
+                    loading. La reproducción responde a la visibilidad del viewport, conserva
+                    un único reproductor activo, controla el buffering y libera controladores,
+                    memoria y caché con una estrategia tipo LRU durante el scrolling, incluyendo
+                    estados de carga y error, transiciones y ciclo de vida de la aplicación.
+                  </li>
+                  <li>
                     Diseñé y evolucioné una arquitectura Flutter escalable basada en Clean
                     Architecture, organizando cada funcionalidad en capas de presentación,
                     dominio y datos, con casos de uso, contratos de repositorio, modelos,
@@ -122,18 +134,6 @@
                     Desarrollé servicios y APIs con ASP.NET Core, Entity Framework Core,
                     SQL Server y Redis para usuarios, espacios de trabajo, mensajería,
                     suscripciones, gamificación, analítica y flujos administrativos.
-                  </li>
-                  <li>
-                    Implementé un pipeline asíncrono de procesamiento y streaming de video en
-                    AWS, desacoplando la carga, transcodificación y generación de rendiciones
-                    mediante un flujo bufferizado con colas, y distribuyendo el contenido por
-                    HLS con bitrate adaptativo. En Flutter desarrollé un pool acotado de videos
-                    y controladores basado en una ventana deslizante que mantiene preparado el
-                    video visible y sus elementos adyacentes mediante prefetching y lazy
-                    loading. La reproducción responde a la visibilidad del viewport, conserva
-                    un único reproductor activo, controla el buffering y libera controladores,
-                    memoria y caché con una estrategia tipo LRU durante el scrolling, incluyendo
-                    estados de carga y error, transiciones y ciclo de vida de la aplicación.
                   </li>
                   <li>
                     Trabajé con Azure Container Apps, API Management, Azure SQL, Redis,
