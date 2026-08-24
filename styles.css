@@ -246,7 +246,34 @@ h1 span {
   margin-bottom: 28px;
   color: #465163;
   font-size: 0.72rem;
-  line-height: 1.65;
+  line-height: 1.55;
+}
+
+.experience-overview p {
+  margin-bottom: 13px;
+  font-size: 0.74rem;
+  line-height: 1.6;
+}
+
+.experience-overview ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 24px;
+  margin: 0;
+  padding-left: 17px;
+}
+
+.experience-overview li {
+  padding-left: 2px;
+  break-inside: avoid;
+}
+
+.experience-overview li::marker {
+  color: var(--blue);
+}
+
+.experience-overview strong {
+  color: var(--navy);
 }
 
 .timeline-item {
@@ -519,6 +546,10 @@ footer button:focus-visible {
   .content-grid {
     grid-template-columns: 1fr;
     gap: 0;
+  }
+
+  .experience-overview ul {
+    grid-template-columns: 1fr;
   }
 
   .main-column,
