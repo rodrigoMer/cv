@@ -359,6 +359,14 @@ h3 {
   border-top: 1px solid var(--line);
 }
 
+.credential-link {
+  color: var(--blue);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
 .interest-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
